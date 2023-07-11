@@ -19,14 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-// Route::get('/projects', [ProjectController::class,'page']);
-// Route::get('/posts', [PostController::class, 'index']);
-
-
-// Route::get('/posts/{id}', [PostController::class, 'show']);
-
-
 Route::get('/posts', [PostController::class, 'page']);
 Route::get('/projectsData', [PostController::class,'projectsData']);
 Route::get('/posts/{id}', [PostController::class, 'show']);
